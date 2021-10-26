@@ -37,7 +37,7 @@ public class Practica_3_4_1{
         System.out.println(num1 + " * " + num2 + " = " + resultado);
         break;
 
-      // performs division between numbers
+      // DIVICIÓN
       case '/':
       resultado = num1 / num2;
         System.out.println(num1 + " / " + num2 + " = " + resultado);
