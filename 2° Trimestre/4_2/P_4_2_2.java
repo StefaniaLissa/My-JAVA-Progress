@@ -2,6 +2,7 @@ import java.util.*;
 import javax.swing.JOptionPane;
 
 	public class P_4_2_2{
+		
 		public static void main (String [] args){
 			String producto [] = new String []{"agua","refresco","zumo"};
 			int precio [] = {50,75,95};
@@ -10,29 +11,12 @@ import javax.swing.JOptionPane;
 			int pagado = 0;
 			int opcion, sobra, cambio, falta=0;
 			boolean sinCambio=false;
-			Scanner sc = new Scanner(System.in);
+			
 			
 			do{
-				for(int i=0;i<producto.length;i++){
-					if(precio[i]<100){
-						System.out.println((i+1)+" "+producto[i]+"- 0,"+precio[i]);
-					}else{
-						System.out.println((i+1)+" "+producto[i]+"- "+precio[i]);
-					}
-				}
+				opcion=menu(producto,precio);
 				
-				System.out.println((producto.length+1)+"-Salir");
-				opcion=sc.nextInt();
-				opcion-=1;
-				
-				for(int i=0;i<cantMonedas.length;i++){
-					if(cantMonedas[i]==0){
-						falta++;
-						if(falta>1||monedas[5]==0){
-							sinCambio=true;
-						}
-					}
-				}
+				sinCambio=impExacto(cantMonedas,monedas);
 				
 				if(opcion<producto.length){
 
@@ -67,14 +51,44 @@ import javax.swing.JOptionPane;
 					}
 				}
 				
-			}while(opcion<producto.length)
+			}while(opcion<producto.length);
 
-				System.out.println("Las monedas que hay son:");
-				for(int i=0;i<cantMonedas.length;i++){
-					if(cantMonedas[i]>0){
-						System.out.println(cantMonedas[i]+" de "+monedas[i]);
+			System.out.println("Las monedas que hay son:");
+			for(int i=0;i<cantMonedas.length;i++){
+				if(cantMonedas[i]>0){
+					System.out.println(cantMonedas[i]+" de "+monedas[i]);
+				}
+			}
+			
+		}
+		
+		public static int menu(String [] producto,int [] precio){
+			Scanner sc = new Scanner(System.in);
+			int opcion;
+			
+			do{
+				for(int i=0;i<producto.length;i++){
+						System.out.println((i+1)+" "+producto[i]+"- "+precio[i]+" centimos");
+					}
+				System.out.println((producto.length+1)+"-Salir");
+				opcion=sc.nextInt();
+				opcion-=1;
+			}while(opcion>producto.length+1);
+			return opcion;
+		}
+		
+		public static boolean impExacto(int [] cantMonedas,int []monedas){
+			int falta=0;
+			boolean sinCambio=false;
+			
+			for(int i=0;i<cantMonedas.length;i++){
+				if(cantMonedas[i]==0){
+					falta++;
+					if(falta>1||monedas[5]==0){
+						sinCambio=true;
 					}
 				}
 			}
+			return sinCambio;
 		}
 	}
