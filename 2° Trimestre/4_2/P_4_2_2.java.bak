@@ -82,6 +82,7 @@ import javax.swing.JOptionPane;
 			do{
 				pago = (int)(100*Double.parseDouble(JOptionPane.showInputDialog("Ingrese "+((precio[opcion])-pagado)+" centimos")));
 				pagado=pago;
+				pagado=pagado+pagado;
 				
 				while (i<monedas.length && !encontrado) {
 					if(pago==monedas[i]) {
