@@ -1,4 +1,4 @@
-import java.util.Arrays;
+import java.util.*;
 
 public class P_4_3_4 {
 	public static void main (String[]args){
@@ -8,12 +8,12 @@ public class P_4_3_4 {
 		
 		for(int c=0;c<5;c++ ){
 			for(int f=0;f<tabla.length;f++ ){
-				tabla[f][c]=sc.nextInt;
+				tabla[f][c]=sc.nextInt();
 				
 				if(tabla[f%2]==1){
-					identidad;
+					identidad=true;
 				}else{
-					!identidad;
+					identidad=false;
 				}
 				System.out.println(Arrays.toString(tabla[f]));
 			}
