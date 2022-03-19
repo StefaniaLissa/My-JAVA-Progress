@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="3_4/|3_6/|3_3/|3_5/|3_7/|6/6_2/" kind="src" path="1° Trimestre"/>
+	<classpathentry kind="src" path="1° Trimestre/3_3"/>
+	<classpathentry kind="src" path="1° Trimestre/3_4"/>
+	<classpathentry kind="src" path="1° Trimestre/3_5"/>
+	<classpathentry kind="src" path="1° Trimestre/3_6"/>
+	<classpathentry kind="src" path="1° Trimestre/3_7"/>
+	<classpathentry kind="src" path="1° Trimestre/6/6_2"/>
+	<classpathentry excluding="4_3/|4_2/|4_4/" kind="src" path="2° Trimestre/4 - Arrays"/>
+	<classpathentry kind="src" path="2° Trimestre/4 - Arrays/4_2"/>
+	<classpathentry kind="src" path="2° Trimestre/4 - Arrays/4_3"/>
+	<classpathentry kind="src" path="2° Trimestre/4 - Arrays/4_4"/>
+	<classpathentry kind="src" path="2° Trimestre/7 - Utilización de Objetos/7_1 - Creación Objetos y Metodos I/RECTANGULO/src"/>
+	<classpathentry kind="src" path="2° Trimestre/7 - Utilización de Objetos/7_2 - Creación Objetos y Metodos II/CuentaCorriente/src"/>
+	<classpathentry excluding="OtraV/" kind="src" path="2° Trimestre/7 - Utilización de Objetos/7_3 - Creación Objetos y Metodos III/Fecha/src"/>
+	<classpathentry kind="src" path="2° Trimestre/7 - Utilización de Objetos/7_3 - Creación Objetos y Metodos III/Fecha/src/OtraV"/>
+	<classpathentry kind="src" path="2° Trimestre/7 - Utilización de Objetos/7_5 - Atributos Tipo Array/Alumno 7_5/src"/>
+	<classpathentry kind="src" path="2° Trimestre/7 - Utilización de Objetos/7_6 - Array de Objetos/Empleado/src"/>
+	<classpathentry kind="src" path="2° Trimestre/8 - Métodos de Ordenación y Búsqueda Arrays"/>
+	<classpathentry kind="src" path="2° Trimestre/9 - Desarrollo de Clases/9_1"/>
+	<classpathentry kind="src" path="2° Trimestre/9 - Desarrollo de Clases/9_5"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
