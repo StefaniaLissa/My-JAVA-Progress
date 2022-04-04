@@ -47,5 +47,13 @@ public class CongeladosNitrogeno extends ProductosCongelados{
 		return super.toString() + "\tExpoSegundos=" + nitExpoSegundos + "\tinfoMetodo=" + infoMetodo;
 	}
 	
+	public void descripcion() {
+		System.out.println("\n-CONGELADO POR NITROGENO");
+		System.out.println("N° de Lote\t\t\t:"+getLoteNum());
+		System.out.println("Temperatura de Mantenimiento\t:"+getTemRecomendada());
+		System.out.println("Metodo de Congelacion\t\t:"+infoMetodo);
+		System.out.println("Tiempo de Exposicion\t\t:"+nitExpoSegundos);
+	}
+	
 
 }

@@ -92,5 +92,14 @@ public class CongeladosAire extends ProductosCongelados{
 		} while (error);
 	}
 	
+	public void descripcion() {
+		System.out.println("\n-CONGELADO POR AIRE");
+		System.out.println("N° de Lote\t\t\t:"+getLoteNum());
+		System.out.println("Temperatura de Mantenimiento\t:"+getTemRecomendada());
+		System.out.println("Porsentaje Vapor Agua\t\t:"+porcVaporAgua);
+		System.out.println("Porsentaje Nitrogeno\t\t:"+porcNitrogeno);
+		System.out.println("Porsentaje CO2\t\t\t:"+porcDioxCarb);
+		System.out.println("Porsentaje Oxigeno\t\t:"+porcOxigeno);
+	}
 	
 }

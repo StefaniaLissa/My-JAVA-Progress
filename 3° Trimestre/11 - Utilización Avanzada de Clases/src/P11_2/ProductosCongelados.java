@@ -4,7 +4,6 @@ import java.util.Date;
 
 public class ProductosCongelados extends Productos{
 	//Atributos
-	private String paisOrigen;
 	private int temRecomendada;
 
 	//Constructores
@@ -12,16 +11,14 @@ public class ProductosCongelados extends Productos{
 		super();
 	}
 	
-	public ProductosCongelados( String paisOrigen, int temRecomendada) {
+	public ProductosCongelados(int temRecomendada) {
 		super();
-		this.paisOrigen = paisOrigen;
-		this.temRecomendada = temRecomendada;
+		this.temRecomendada =temRecomendada;
 	}
 	
 	
 	public ProductosCongelados(int loteNum, Date fechaCaducidad, Date fechaEnvasado, String paisOrigen, int temRecomendada) {
 		super(loteNum, fechaCaducidad, fechaEnvasado, paisOrigen);
-		this.paisOrigen = paisOrigen;
 		this.temRecomendada = temRecomendada;
 	}
 
@@ -40,5 +37,10 @@ public class ProductosCongelados extends Productos{
 		return super.toString() + "\t temRecomendada=" + temRecomendada;
 	}
 	
+	public void descripcion() {
+		System.out.println("\n-CONGELADO");
+		System.out.println("N° de Lote\t\t\t:"+getLoteNum());
+		System.out.println("Temperatura de Mantenimiento\t:"+temRecomendada);
+	}
 	
 }

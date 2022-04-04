@@ -36,5 +36,11 @@ public class CongeladoAgua  extends ProductosCongelados{
 		return super.toString() + "\tSalinidad=" + salinidad;
 	}
 	
+	public void descripcion() {
+		System.out.println("\n-CONGELADO POR AGUA");
+		System.out.println("N° de Lote\t\t\t:"+getLoteNum());
+		System.out.println("Temperatura de Mantenimiento\t:"+getTemRecomendada());
+		System.out.println("Salinidad\t\t\t:"+salinidad);
+	}
 
 }
