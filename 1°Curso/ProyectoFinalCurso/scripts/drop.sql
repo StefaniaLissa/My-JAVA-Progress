@@ -1,0 +1,12 @@
+DROP TABLE items_orden;  
+DROP TABLE ordenes;
+DROP TABLE inventarios;
+DROP TABLE productos;
+DROP TABLE categoria_productos;
+DROP TABLE depositos;
+DROP TABLE empleados;
+DROP TABLE contactos;
+DROP TABLE clientes;
+DROP TABLE ubicaciones;
+DROP TABLE paises;
+DROP TABLE regiones;
