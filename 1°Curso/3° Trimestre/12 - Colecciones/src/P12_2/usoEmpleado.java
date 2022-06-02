@@ -51,6 +51,25 @@ public class usoEmpleado {
 
 		visualiza();
 		
+		//-------------------------------------------------------------//
+		
+		Empleado emp1 = new Empleado ("Empleado2", "444", 1000.0);
+		listaEmpleados.add(emp1);
+		
+		String respuesta;
+		
+		if (listaEmpleados.contains(emp1)) {
+			respuesta="sí";
+		}else {
+			respuesta="no";
+		}
+		
+		System.out.printf("El empleado emp1 %s esta en la lista",respuesta);
+		
+		System.out.printf("\nEl empleado emp1 %s esta en la lista",(listaEmpleados.contains(emp1))? "sí" : "no");
+		
+		//-------------------------------------------------------------//
+		
 		//5)
 		System.out.print("Nombre de empleado a eliminar: ");
 		buscar = sc.next();
@@ -60,6 +79,7 @@ public class usoEmpleado {
 			if (listaEmpleados.get(i).getNombre().equals(buscar)) {
 				System.out.println("Empleado eliminado "+listaEmpleados.get(i).toString());
 				listaEmpleados.remove(i);
+				i=i-1;
 				encontrado = true;
 			}
 		}
